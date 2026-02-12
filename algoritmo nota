@@ -1,0 +1,32 @@
+programa {
+  funcao inicio() {
+    inteiro nota1, nota2, nota3
+    real media, recuperacao
+
+    escreva("Digite a primeira nota: ")
+    leia(nota1)
+
+    escreva("Digite a segunda nota: ")
+    leia(nota2)
+    
+    escreva("Digite a terceira nota: ")
+    leia(nota3)
+    media = (nota1 + nota2 + nota3) / 3
+    
+    se (media >=7) {
+      escreva("Aluno aprovado")
+    } senao se (media < 5) {
+      escreva("Aluno reprovado")
+    } senao {
+      escreva("Digite a nota da recuperação: ")
+      leia(recuperacao)
+      se (recuperacao >=7) {
+        escreva("Aluno aprovado pela Recuperação")
+      } senao {
+        escreva("Aluno Reprovado pela Recuperação")
+      }
+    }
+
+
+  }
+}
